@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article preview component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container-img">
+            <img src="images/drawers.jpg" alt="image component">
+        </div>
+        <div class="container-info">
+            <h1>Shift the overall look and feel by adding these wonderful 
+                touches to furniture in your home</h1>
+            <p>Ever been in a room and felt like something was missing? Perhaps 
+                it felt slightly bare and uninviting. I’ve got some simple tips 
+                to help you make any room feel complete.</p>
+            <div class="container-avatar">
+                <div class="avatar">
+                    <img src="images/avatar-michelle.jpg" alt="image avatar">
+                    <div class="avatar-info">
+                        <h5>Michelle Appleton</h5>
+                        <span>28 Jun 2020</span>
+                    </div>
+                </div>
+                <button class="btn-share"><img src="images/icon-share.svg" alt=""></button>
+                
+            </div>
+            <div class="share-socials">
+                <p>SHARE</p>
+                <img src="images/icon-facebook.svg" alt="social icons">
+                <img src="images/icon-twitter.svg" alt="social icons">
+                <img src="images/icon-pinterest.svg" alt="social icons">
+            </div>
+            
+        </div>
+        
+    </div>
+   
+
+    <script>
+        const button = document.querySelector('.btn-share')
+        const social = document.querySelector('.share-socials')
+
+        button.addEventListener('click', show)
+
+        function show(){
+            social.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>
